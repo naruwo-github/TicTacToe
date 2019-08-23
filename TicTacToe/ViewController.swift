@@ -68,13 +68,9 @@ class ViewController: UIViewController {
                 print("fin")
                 
                 if fieldState[pattern[0]] == 1{
-                    //winLabel.alpha = 1
-                    //winLabel.text = "Twitter won!!"
                     print("Player1 won!!")
                     
                 } else if fieldState[pattern[0]] == 2{
-                    //winLabel.alpha = 1
-                    //winLabel.text = "LINE won!!"
                     print("Player2 won!!")
                     
                 }
