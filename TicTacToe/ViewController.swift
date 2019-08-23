@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //playing frag
+    var playing = true
     //player1: 1, player2: 2, other: 0.
     var activePlayer = 1
     //field information
@@ -22,7 +24,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    //reset button
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        activePlayer = 1
+        
+        fieldState = [0,0,0,0,0,0,0,0,0]
+        
+        playing = true
+        
+        var button: UIButton
+        for i in 0..<9 {
+            button = view.viewWithTag(i) as! UIButton
+            button.setImage(nil, for: .normal)
+        }
+        
+    }
 
 }
 
