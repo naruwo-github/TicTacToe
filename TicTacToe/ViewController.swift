@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         button0.addTarget(self, action: #selector(resetButtonTapped(_:)), for: UIControl.Event.touchUpInside)
         button0.setTitle("RESET", for: UIControl.State.normal)
         button0.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        button0.backgroundColor = UIColor.gray
+        button0.layer.cornerRadius = 25
+        button0.layer.shadowOpacity = 0.5
+        button0.layer.shadowOffset = CGSize(width: 2, height: 2)
         button0.frame = CGRect(x: 0, y: 0, width: w / 3, height: w / 6)
         button0.center = CGPoint(x: w / 2, y: h / 2 + w / 3 * 2)
         self.view.addSubview(button0)
