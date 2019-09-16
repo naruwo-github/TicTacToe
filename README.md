@@ -8,7 +8,7 @@ This app serves basic game of it.
 Player 1 vs. Player 2.
 Player win when he make the line composed of 3 elements of him.
 
-<img src="src/TicTacToe1.png" width="200" align="center" />
-<img src="src/TicTacToe2.png" width="200" align="center" />
-<img src="src/TicTacToe3.png" width="200" align="center" />
-<img src="src/TicTacToe4.png" width="200" align="center" />
+<img src="src/TicTacToe1.png" width="200" /> <img src="src/TicTacToe2.png" width="200" /> <img src="src/TicTacToe3.png" width="200" /> <img src="src/TicTacToe4.png" width="200" />
+
+This app is under developing...
+I hope upload this to AppStore near future:)
