@@ -12,6 +12,7 @@
 		05B6959E230FD90E00092808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B6959C230FD90E00092808 /* Main.storyboard */; };
 		05B695A0230FD90F00092808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B6959F230FD90F00092808 /* Assets.xcassets */; };
 		05B695A3230FD90F00092808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B695A1230FD90F00092808 /* LaunchScreen.storyboard */; };
+		6F89DF587AA37914F5B6FAF3 /* Pods_TicTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAE1B9764933D420825D7D5 /* Pods_TicTacToe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		05B6959F230FD90F00092808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B695A2230FD90F00092808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05B695A4230FD90F00092808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAE1B9764933D420825D7D5 /* Pods_TicTacToe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DE9C6BF38BD904BC6151B1 /* Pods-TicTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.debug.xcconfig"; path = "Target Support Files/Pods-TicTacToe/Pods-TicTacToe.debug.xcconfig"; sourceTree = "<group>"; };
+		EE2B50C164F58859696963FD /* Pods-TicTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.release.xcconfig"; path = "Target Support Files/Pods-TicTacToe/Pods-TicTacToe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F89DF587AA37914F5B6FAF3 /* Pods_TicTacToe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				05B69597230FD90E00092808 /* TicTacToe */,
 				05B69596230FD90E00092808 /* Products */,
+				FC8CA7EC6AFBD24A560E91FC /* Pods */,
+				84065B20B9B641A70A0F3060 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = TicTacToe;
 			sourceTree = "<group>";
 		};
+		84065B20B9B641A70A0F3060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EAE1B9764933D420825D7D5 /* Pods_TicTacToe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC8CA7EC6AFBD24A560E91FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72DE9C6BF38BD904BC6151B1 /* Pods-TicTacToe.debug.xcconfig */,
+				EE2B50C164F58859696963FD /* Pods-TicTacToe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05B695A7230FD90F00092808 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
 			buildPhases = (
+				05E4B120A6CB056C1B23394B /* [CP] Check Pods Manifest.lock */,
 				05B69591230FD90E00092808 /* Sources */,
 				05B69592230FD90E00092808 /* Frameworks */,
 				05B69593230FD90E00092808 /* Resources */,
+				D673BA563846ED5B993F3867 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E4B120A6CB056C1B23394B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTacToe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D673BA563846ED5B993F3867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicTacToe/Pods-TicTacToe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05B69591230FD90E00092808 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		05B695A8230FD90F00092808 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DE9C6BF38BD904BC6151B1 /* Pods-TicTacToe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		05B695A9230FD90F00092808 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE2B50C164F58859696963FD /* Pods-TicTacToe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
