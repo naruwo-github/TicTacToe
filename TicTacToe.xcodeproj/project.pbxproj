@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05568F8F2359AD9C007B9BB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05568F8E2359AD9C007B9BB0 /* GoogleService-Info.plist */; };
 		05B69599230FD90E00092808 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B69598230FD90E00092808 /* AppDelegate.swift */; };
 		05B6959B230FD90E00092808 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B6959A230FD90E00092808 /* ViewController.swift */; };
 		05B6959E230FD90E00092808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B6959C230FD90E00092808 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05568F8E2359AD9C007B9BB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05B69595230FD90E00092808 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B69598230FD90E00092808 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B6959A230FD90E00092808 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				05B6959F230FD90F00092808 /* Assets.xcassets */,
 				05B695A1230FD90F00092808 /* LaunchScreen.storyboard */,
 				05B695A4230FD90F00092808 /* Info.plist */,
+				05568F8E2359AD9C007B9BB0 /* GoogleService-Info.plist */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -85,7 +88,6 @@
 				72DE9C6BF38BD904BC6151B1 /* Pods-TicTacToe.debug.xcconfig */,
 				EE2B50C164F58859696963FD /* Pods-TicTacToe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B695A3230FD90F00092808 /* LaunchScreen.storyboard in Resources */,
+				05568F8F2359AD9C007B9BB0 /* GoogleService-Info.plist in Resources */,
 				05B695A0230FD90F00092808 /* Assets.xcassets in Resources */,
 				05B6959E230FD90E00092808 /* Main.storyboard in Resources */,
 			);
