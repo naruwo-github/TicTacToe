@@ -165,8 +165,15 @@ class ViewController: UIViewController {
             if fieldState[pattern[0]] != 0 && fieldState[pattern[0]] == fieldState[pattern[1]] && fieldState[pattern[0]] == fieldState[pattern[2]]{
                 print("fin")
                 
+                //endView
+                let buttleView = UIView(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+                var text: String = "Finish!!"
+                //buttleView.addSubview(text)
+                
                 if fieldState[pattern[0]] == 1{
                     print("Player1 won!!")
+                    
+                    self.view.addSubview(buttleView)
                     
                 } else if fieldState[pattern[0]] == 2{
                     print("Player2 won!!")
